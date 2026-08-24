@@ -13,7 +13,7 @@ standard library and the system calls underneath it:
 | --- | --- |
 | **[webserv](https://github.com/SylvioRand/webserv)** | An HTTP/1.1 web server in C++98 — single-threaded non-blocking event loop over `poll()`, virtual hosts, chunked transfer, file uploads, CGI execution, and an NGINX-inspired configuration parser. |
 | **[minishell](https://github.com/SylvioRand/minishell)** | A working Unix shell in C — hand-written lexer and parser for quotes, redirections, heredocs and arbitrary-length pipelines, with bash-accurate signal handling and exit statuses. |
-| **[miniRT](https://github.com/SylvioRand/miniRT)** | A CPU raytracer in C — analytic ray/primitive intersection, Phong shading, hard shadows, and a strict scene-format parser. |
+| **[FdF](https://github.com/SylvioRand/fdf)** | A 3D wireframe renderer in C — hand-written Bresenham rasterisation, transformation matrices, isometric and front projections, live rotation and zoom. MiniLibX gives me one pixel; everything between a text file and a picture is mine. |
 | **[ft_transcendence](https://github.com/SylvioRand/ft_transcendence-42)** | A real-time multiplayer web application in TypeScript — OAuth2 against the 42 API, a server-authoritative WebSocket game loop, chat with moderation, fully containerised. |
 | **[Inception](https://github.com/SylvioRand/inception)** | Docker infrastructure built from base images only — NGINX terminating TLS 1.2/1.3, WordPress on PHP-FPM, MariaDB, dedicated network, persistent volumes. |
 | **[Philosophers](https://github.com/SylvioRand/philosophers)** | Concurrency under tight timing: POSIX threads and mutexes, no data race, no deadlock, no starvation. |
@@ -45,8 +45,7 @@ and building the tooling agents run on rather than just consuming it.
 ### Foundations
 
 Also public: **[push_swap](https://github.com/SylvioRand/push_swap)** — sorting a stack under a
-minimal instruction budget — and **[FdF](https://github.com/SylvioRand/fdf)**, a 3D isometric
-wireframe renderer.
+minimal instruction budget, with my own algorithm rather than a known one.
 
 The early exercises the curriculum is built on — reimplementing parts of the C standard library,
 `printf` and its variadic parsing, buffered line reading, bit-level IPC over UNIX signals, and the
