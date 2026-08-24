@@ -44,10 +44,14 @@ and building the tooling agents run on rather than just consuming it.
 
 ### Foundations
 
-[libft](https://github.com/SylvioRand/libft) · [ft_printf](https://github.com/SylvioRand/ft_printf) ·
-[get_next_line](https://github.com/SylvioRand/get_next_line) · [push_swap](https://github.com/SylvioRand/push_swap) ·
-[minitalk](https://github.com/SylvioRand/minitalk) · [FdF](https://github.com/SylvioRand/fdf) ·
-CPP Modules [01](https://github.com/SylvioRand/CPP_Module_01)–[09](https://github.com/SylvioRand/CPP_Module_09)
+Also public: **[push_swap](https://github.com/SylvioRand/push_swap)** — sorting a stack under a
+minimal instruction budget — and **[FdF](https://github.com/SylvioRand/fdf)**, a 3D isometric
+wireframe renderer.
+
+The early exercises the curriculum is built on — reimplementing parts of the C standard library,
+`printf` and its variadic parsing, buffered line reading, bit-level IPC over UNIX signals, and the
+C++98 modules covering OOP, templates, containers and the STL — are kept **private on purpose**, so
+that current 42 students cannot lift them as ready-made solutions. Happy to share them on request.
 
 ### Currently
 
