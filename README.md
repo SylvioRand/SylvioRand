@@ -58,7 +58,7 @@ The architecture and the judgement are mine. What is accelerated is the typing.
 
 ### The systems underneath
 
-I completed the full Common Core at **42 Antananarivo**, where the curriculum bans frameworks and
+I completed the full Common Core at **[42 Antananarivo](https://42antananarivo.mg/)**, where the curriculum bans frameworks and
 external libraries. You do not import the thing — you write it.
 
 | Project | What it is |
