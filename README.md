@@ -14,8 +14,8 @@ guarantee. Generating code is easy now. Keeping a codebase coherent at month six
 
 ### Archit — what I am building now
 
-A SaaS I have been building alone since March 2026. Every generation tool improvises architecture as it
-goes: fine for a weekend, ruinous at scale. Archit makes it an interrogable, validated source of truth
+A SaaS I have been building alone since March 2026. Generation tools tend to improvise architecture as
+they go: fine for a weekend, increasingly costly at scale. Archit makes it an interrogable, validated source of truth
 **before** generation, then exports it into the language each tool speaks — MCP first. The repository is
 private while it is a commercial product; the discipline is the part worth showing:
 
@@ -84,10 +84,12 @@ year without me.
 
 ### Working with
 
-**Languages** — `C` · `C++98/11` · `Python` · `TypeScript` · `Bash`
-**Agents & retrieval** — MCP · context engineering · LiteLLM · ChromaDB · `pgvector` · sentence-transformers
-**Systems** — sockets · `poll` · pthreads · HTTP internals · TLS · Linux
-**Services & data** — `PostgreSQL` · `Redis` · Hono on Bun · FastAPI · Next.js · Docker · NGINX
+| | |
+|---|---|
+| **Languages** | `C` · `C++98/11` · `Python` · `TypeScript` · `Bash` |
+| **Agents & retrieval** | MCP · context engineering · LiteLLM · ChromaDB · `pgvector` · sentence-transformers |
+| **Systems** | sockets · `poll` · pthreads · HTTP internals · TLS · Linux |
+| **Services & data** | `PostgreSQL` · `Redis` · Hono on Bun · FastAPI · Next.js · Docker · NGINX |
 
 Underneath all of it: non-blocking I/O, POSIX processes and threads, memory management without a
 garbage collector, and the kind of debugging where the bug is three layers below the language.
