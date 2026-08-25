@@ -15,44 +15,36 @@ code coherent at month six.
 
 ### Archit — what I am building now
 
-A SaaS I have been building alone since March 2026. Every generation tool improvises architecture as
-it goes: fine for a weekend, ruinous at scale. Archit makes the architecture an interrogable, validated
-source of truth **before** generation, then exports it into the language each tool speaks — MCP first,
-plus Prisma, OpenAPI and the rest.
-
-Five months in, and the discipline is the point:
+A SaaS I have been building alone since March 2026. Every generation tool improvises architecture as it
+goes: fine for a weekend, ruinous at scale. Archit makes it an interrogable, validated source of truth
+**before** generation, then exports it into the language each tool speaks — MCP first. The repository is
+private while it is a commercial product; the discipline is the part worth showing:
 
 | | |
 |---|---|
-| **96 numbered architecture decisions** | each one supersedes or amends the ones before it, by number, with its rationale — `§94` retires `§85`'s Redis lock, `§96` amends `§79` |
+| **96 numbered decisions** | each supersedes or amends the ones before it, by number — `§94` retires `§85`'s Redis lock |
 | **Five non-negotiable Laws** | *Align before you build* · Single Schema Truth · Intent Layer · validation at every boundary · tests in the same commit |
-| **A cascade rule** | when one decision changes, every dependent document changes in the same commit — a spec that drifts from its own decisions is worse than no spec |
-| **Determinism as a contract** | canonical JSON, domain-separated SHA-256, and golden fixtures compared **byte for byte** between the TypeScript and Python sides |
-| **Fail-closed by default** | an unresolvable risk manifest blocks generation rather than waving it through |
+| **A cascade rule** | change one decision and every dependent document changes in the same commit |
+| **Determinism as a contract** | golden fixtures compared **byte for byte** between the TypeScript and Python sides |
+| **Fail-closed** | an unresolvable risk manifest blocks generation rather than waving it through |
 
-One decision that shows how I think: I removed a Redis lock from the concurrency protocol and replaced
-it with a compare-and-swap on the aggregate, with leases and epochs — because **a lock with a timeout
-is not a fence**. An expired holder can still write. That distinction is the difference between a
-system that looks correct and one that is.
-
-I also run contradictory reviews against my own drafts and record the verdict, including when the
-verdict kills a position I had already written down.
+What `§94` actually did: I removed a Redis lock from the concurrency protocol and replaced it with a
+compare-and-swap on the aggregate, with leases and epochs — because **a lock with a timeout is not a
+fence**. An expired holder can still write. That is the difference between a system that looks correct
+and one that is.
 
 ### Context engineering — the part most people leave implicit
 
-On a codebase this size the bottleneck is not generation, it is **context**. Sending everything is not
-the same as remembering everything: past a threshold, more context makes a model measurably worse. So
-I engineered it rather than hoped.
+The bottleneck is not generation, it is **context**: past a threshold, more of it makes a model
+measurably worse. So I engineered it rather than hoped.
 
-- **Cold context** — loaded every session: the five Laws, the decision index, the project in thirty seconds.
-- **Hot context** — only what the current step needs, reached through **symbolic links**, so nothing
-  else is even *reachable*. Control over reachability beats instructions that ask politely.
-- **Windows bounded by tokens**, not by number of turns.
-- **Tail placement**, because attention sags in the middle of long inputs.
-- Grounded in the research — context rot (Chroma, 2025) and lost-in-the-middle (Liu, 2023) — not in blog posts.
-- **MCP-first**: four endpoints, plus `/archit-bootstrap` and `/archit-step` so that starting a step is
-  a reproducible operation instead of an improvisation.
-- Multi-provider routing through LiteLLM, chosen per task complexity rather than per habit.
+- **Cold** — loaded every session: five Laws, the decision index, the project in thirty seconds.
+  **Hot** — only what the current step needs, reached through **symbolic links**, so nothing else is
+  even *reachable*. Controlling reachability beats instructions that ask politely.
+- Windows bounded by **tokens, not turns**, with the step's own documents placed at the **tail**,
+  because attention sags in the middle. From the research on context rot and lost-in-the-middle, not blog posts.
+- **MCP-first** — four endpoints, plus `/archit-bootstrap` and `/archit-step`, so starting a step is a
+  reproducible operation rather than an improvisation.
 
 The architecture and the judgement are mine. What is accelerated is the typing.
 
@@ -93,13 +85,13 @@ year without me.
 
 ### Working with
 
-`Python` · `TypeScript` · `C` · `C++98/11` · `Bash` · MCP · LiteLLM · `pgvector` · `PostgreSQL` ·
-`Redis` · `BullMQ` · `Hono` · `Bun` · `FastAPI` · `Next.js` · `Docker` · `NGINX` · `Linux`
+**Languages** — `C` · `C++98/11` · `Python` · `TypeScript` · `Bash`
+**Agents & retrieval** — MCP · context engineering · LiteLLM · ChromaDB · `pgvector` · sentence-transformers
+**Systems** — sockets · `poll` · pthreads · HTTP internals · TLS · Linux
+**Services & data** — `PostgreSQL` · `Redis` · Hono on Bun · FastAPI · Next.js · Docker · NGINX
 
-Agent tooling and context engineering on codebases large enough for it to matter; and underneath that,
-sockets and non-blocking I/O, POSIX processes and threads, memory management without a garbage
-collector, HTTP internals, TLS termination, and the kind of debugging where the bug is three layers
-below the language.
+Underneath all of it: non-blocking I/O, POSIX processes and threads, memory management without a
+garbage collector, and the kind of debugging where the bug is three layers below the language.
 
 ---
 
