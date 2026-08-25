@@ -115,7 +115,7 @@ and a solid morning overlap with US eastern time.
 
 **randrianarisatasylvio@gmail.com**
 
-I take on remote contracts: agent tooling and context engineering, backend and systems work, and
-projects that want their architecture settled before the first line of code.
+Agent tooling and context engineering, backend and systems work, and projects where getting the
+architecture right actually matters.
 
-**Open to proposals.**
+**Available for remote contracts.**
