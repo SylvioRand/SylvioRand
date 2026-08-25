@@ -5,6 +5,10 @@ Antananarivo, Madagascar · UTC+3 · available for remote contract or full-time 
 
 ---
 
+**[Portfolio →](https://claude.ai/code/artifact/216d894b-cdc6-4d02-83be-3cb3d6c85f2c)** — the same
+work written up properly, with my push_swap replaying its own instruction stream and my FdF renderer
+compiled to WebAssembly and running in the page.
+
 I completed the full Common Core at **42 Antananarivo**, where the curriculum bans frameworks and
 external libraries. You do not import the thing — you write it. So I have built, from nothing but the
 standard library and the system calls underneath it:
@@ -22,12 +26,17 @@ standard library and the system calls underneath it:
 *webserv, minishell and CASA are team projects at 42; my contribution is described in each
 repository's README.*
 
-### Five ranked exams. Five perfect scores.
+### Five ranked exams, passed
 
 A 42 exam is taken alone, on the clock, with no internet, no notes and no help, and is graded by a test
-harness that either accepts your program or does not. There is no partial credit and no argument.
+harness that either accepts your program or does not. **The pass mark is 100** — anything under it is
+not a lower grade, it is a fail, so every 100 below is a pass rather than a distinction. There is no
+partial credit and no argument.
 
-`Rank 02 — 100` · `Rank 03 — 100` · `Rank 04 — 100` · `Rank 05 — 100` · `Rank 06 — 100`
+`Rank 02` · `Rank 03` · `Rank 04` · `Rank 05` · `Rank 06`
+
+What separates a transcript is the projects, where 100 is where you are *allowed* to stop and 125 means
+the optional bonus was built and defended as well. I have ten at 125.
 
 ---
 
@@ -71,6 +80,11 @@ collector, HTTP internals, TLS termination, and the kind of debugging where the 
 below the language.
 
 ---
+
+<picture>
+  <source media="(max-width: 520px)" srcset="assets/card-narrow.svg">
+  <img src="assets/card.svg" alt="Sylvio Faneva Randrianarisata — systems and backend engineer, Antananarivo, UTC+3" width="880">
+</picture>
 
 ### Reach me
 
