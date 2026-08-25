@@ -13,12 +13,13 @@ standard library and the system calls underneath it:
 | --- | --- |
 | **[webserv](https://github.com/SylvioRand/webserv)** | An HTTP/1.1 web server in C++98 — single-threaded non-blocking event loop over `poll()`, virtual hosts, chunked transfer, file uploads, CGI execution, and an NGINX-inspired configuration parser. |
 | **[minishell](https://github.com/SylvioRand/minishell)** | A working Unix shell in C — hand-written lexer and parser for quotes, redirections, heredocs and arbitrary-length pipelines, with bash-accurate signal handling and exit statuses. |
+| **[push_swap](https://github.com/SylvioRand/push_swap)** | Sorting a stack through eleven permitted instructions, optimised for the fewest operations — my own cost model rather than a borrowed algorithm. A median of 3 853 operations on 500 values, where full marks stop at 5 500. |
 | **[FdF](https://github.com/SylvioRand/fdf)** | A 3D wireframe renderer in C — hand-written Bresenham rasterisation, transformation matrices, isometric and front projections, live rotation and zoom. MiniLibX gives me one pixel; everything between a text file and a picture is mine. |
-| **[ft_transcendence](https://github.com/SylvioRand/ft_transcendence-42)** | A real-time multiplayer web application in TypeScript — OAuth2 against the 42 API, a server-authoritative WebSocket game loop, chat with moderation, fully containerised. |
+| **[CASA](https://github.com/SylvioRand/ft_transcendence-42)** | My capstone, built by a team of five where I was tech lead: a property marketplace for the Malagasy market — land, houses and apartments to buy, sell or rent — with AI tooling that lets a buyer describe what they want in their own words instead of filling in a filter form. I owned `services/listings`, the service the product exists for. **243 of the 953 commits are mine**, second of five contributors. |
 | **[Inception](https://github.com/SylvioRand/inception)** | Docker infrastructure built from base images only — NGINX terminating TLS 1.2/1.3, WordPress on PHP-FPM, MariaDB, dedicated network, persistent volumes. |
 | **[Philosophers](https://github.com/SylvioRand/philosophers)** | Concurrency under tight timing: POSIX threads and mutexes, no data race, no deadlock, no starvation. |
 
-*webserv, minishell and ft_transcendence are team projects at 42; my contribution is described in each
+*webserv, minishell and CASA are team projects at 42; my contribution is described in each
 repository's README.*
 
 ### Five ranked exams. Five perfect scores.
@@ -30,31 +31,35 @@ harness that either accepts your program or does not. There is no partial credit
 
 ---
 
-### Outside the curriculum
+### What I am building now
 
-The systems work proves depth; these prove I ship.
+**Archit** — a SaaS I have been building alone since March 2026. Anyone can generate code in minutes
+now, and every one of those tools improvises the architecture as it goes: fine for a weekend, ruinous
+at month six. Archit structures the project *before* generation, then exports that structure into the
+language each tool speaks. Five months in: 503 commits, 77k lines of code, 45k lines of documentation,
+and **96 numbered architecture decision records**, under a rule that when one changes, every dependent
+document changes in the same commit.
 
-- **[youtube-transcript-mcp](https://github.com/SylvioRand/youtube-transcript-mcp)** — a Model Context Protocol server in JavaScript
-- **[hono-telemetry](https://github.com/SylvioRand/hono-telemetry)** — telemetry for Hono, TypeScript
-- **[trust-estate](https://github.com/SylvioRand/trust-estate)** — TypeScript
-- **[lazyvimconfig](https://github.com/SylvioRand/lazyvimconfig)** — my editor setup
+The repository is private while it is a commercial product. Happy to walk through the architecture.
 
-I also work with AI-assisted development day to day: spec-driven development, context engineering,
-and building the tooling agents run on rather than just consuming it.
+### Built for someone else
 
-### Foundations
+**[info-connectee](https://github.com/SylvioRand/info-connectee)** — a digital newspaper written by a
+class of ten-year-olds. A primary-school teacher described what she wanted her pupils to be able to do;
+turning that into technical decisions was the whole job. I chose Hugo deliberately and against my own
+preferences: a static site means free hosting, no database to administer, no dependency to patch, and
+articles that live in markdown files the teachers edit themselves. It has been running through a school
+year without me.
 
-Also public: **[push_swap](https://github.com/SylvioRand/push_swap)** — sorting a stack under a
-minimal instruction budget, with my own algorithm rather than a known one.
+I also work with AI-assisted development day to day: spec-driven development, context engineering, and
+building the tooling agents run on rather than just consuming it.
+
+### Foundations, kept private on purpose
 
 The early exercises the curriculum is built on — reimplementing parts of the C standard library,
 `printf` and its variadic parsing, buffered line reading, bit-level IPC over UNIX signals, and the
-C++98 modules covering OOP, templates, containers and the STL — are kept **private on purpose**, so
-that current 42 students cannot lift them as ready-made solutions. Happy to share them on request.
-
-### Currently
-
-Working through `ft_linear_regression` — the start of 42's machine learning branch.
+C++98 modules covering OOP, templates, containers and the STL — are **private on purpose**, so that
+current 42 students cannot lift them as ready-made solutions. Happy to share them on request.
 
 ### Working with
 
@@ -72,6 +77,6 @@ below the language.
 Native French and Malagasy, professional English. UTC+3 gives a full working-day overlap with Europe
 and a solid morning overlap with US eastern time.
 
-**sylvio.rand@gmail.com**
+**randrianarisatasylvio@gmail.com**
 
 I am glad to take a paid trial task so you can judge the work directly rather than take my word for it.
