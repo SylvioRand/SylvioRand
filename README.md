@@ -10,8 +10,7 @@ work written up properly, with my push_swap replaying its own instruction stream
 compiled to WebAssembly and running in the page.
 
 I build the layer agents run on, and I have the systems background to know what that layer has to
-guarantee. Anyone can generate code in 2026; almost nobody is building the part that keeps generated
-code coherent at month six.
+guarantee. Generating code is easy now. Keeping a codebase coherent at month six is the harder problem.
 
 ### Archit — what I am building now
 
