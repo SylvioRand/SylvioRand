@@ -1,7 +1,7 @@
 # Sylvio Faneva Randrianarisata
 
 **AI systems engineer — agent tooling, context engineering, MCP.**
-Antananarivo, Madagascar · UTC+3 · available for remote contract or full-time work.
+Antananarivo, Madagascar · UTC+3 · taking on remote contracts.
 
 ---
 
@@ -108,12 +108,14 @@ below the language.
   <img src="assets/card.svg" alt="Sylvio Faneva Randrianarisata — AI systems engineer, Antananarivo, UTC+3" width="880">
 </picture>
 
-### Reach me
+### Work with me
 
 Native French and Malagasy, professional English. UTC+3 gives a full working-day overlap with Europe
 and a solid morning overlap with US eastern time.
 
 **randrianarisatasylvio@gmail.com**
 
-**Hand me a real piece of the work as a paid trial task.** I would rather be measured on a result than
-believed on a claim — and it is the fastest way for both of us to find out.
+I take on remote contracts: agent tooling and context engineering, backend and systems work, and
+projects that want their architecture settled before the first line of code.
+
+**Open to proposals.**
