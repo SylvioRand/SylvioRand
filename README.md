@@ -97,8 +97,8 @@ garbage collector, and the kind of debugging where the bug is three layers below
 ---
 
 <picture>
-  <source media="(max-width: 520px)" srcset="assets/card-narrow.svg">
-  <img src="assets/card.svg" alt="Sylvio Faneva Randrianarisata — AI systems engineer, Antananarivo, UTC+3" width="880">
+  <source media="(max-width: 520px)" srcset="assets/card-narrow.svg?v=2">
+  <img src="assets/card.svg?v=2" alt="Sylvio Faneva Randrianarisata — AI systems engineer, Antananarivo, UTC+3" width="880">
 </picture>
 
 ### Work with me
