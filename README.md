@@ -5,7 +5,7 @@ Antananarivo, Madagascar · UTC+3 · taking on remote contracts.
 
 ---
 
-**[Portfolio →](https://claude.ai/code/artifact/216d894b-cdc6-4d02-83be-3cb3d6c85f2c)** — the same
+**[Portfolio →](https://sylviorand.github.io)** — the same
 work written up properly, with my push_swap replaying its own instruction stream and my FdF renderer
 compiled to WebAssembly and running in the page.
 
